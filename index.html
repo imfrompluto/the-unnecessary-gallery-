@@ -15,102 +15,113 @@
 
 <body>
 
-  <div class="container">
-    <img src="1.png" alt="">
-    <a href="">
+  <div id= "container" class="container">
+    <img id="bigimage" src="1.jpg" alt="">
+    <a class="leftArrow" href="#/">
       <img src="next.png" alt="">
     </a>
-    <a href="">
+    <a class="rightArrow" href="#/">
       <img src="next.png" alt="">
     </a>
   </div> 
 
-  <h1>THE unnecessary gallery</h1>
+  <h1 id="title" onclick="resizeText()">THE unnecessary gallery</h1>
   <div class="painting">
-    <img src="0.jpg" alt="">
+    <img class="img" src="0.jpg" alt="" onclick="openImage(0)">      
     <div class="info">
       <h2>starry night</h2>
       <h3>Van gogh</h3>
       <p>1889, The Museum of Modern Art</p>
       <a href="https://www.britannica.com/topic/The-Starry-Night">read more</a>
+      <p>i like the shades of blue that were used</p>
 
     </div>
   </div>
   <div class="painting">
-    <img src="1.png" alt="">
+    <img class="img" src="1.jpg" alt="" onclick="openImage(1)">
+
     <div class="info">
       <h2>Gli archeologi</h2>
       <h3>Giorgio de Chirico</h3>
       <p>1927, rome italy</p>
       <a href="https://www.metmuseum.org/art/collection/search/340919">read more</a>
+      <p>i like how the image looks really surreal</p>
     </div>
   </div>
   <div class="painting">
-    <img src="2.jpg" alt="">
+    <img src="2.jpg" alt="" onclick="openImage(2)">
     <div class="info">
       <h2>Icons</h2>
       <h3>Keith Haring</h3>
       <p>1987, Nakamura Keith Haring Collection</p>
       <a href="https://www.nakamura-haring.com/collection/">read more</a>
-
+      <p>i like the vibrant colours</p>
     </div>
   </div>
   <div class="painting">
-    <img src="4.jpg" alt="">
-    <div class="info">
-      <h2>The procuress</h2>
-      <h3>Gerard van Honthorst</h3>
-      <p>1625, Centraal Museum, Netherlands</p>
-      <a href="https://www.centraalmuseum.nl/nl">read more</a>
-    </div>
-  </div>
-  <div class="painting">
-    <img src="5.webp" alt="">
-    <div class="info">
-      <h2>Portrait of Madame Matisse. The Green Line</h2>
-      <h3>Henri Matisse</h3>
-      <p>1905, Statens Museum for Kunst</p>
-      <a href="https://www.smk.dk/en/highlight/portrait-of-madame-matisse-the-green-line-1905/">read more</a>
-    </div>
-  </div>
-  <div class="painting">
-    <img src="6.jpg" alt="">
-    <div class="info">
-      <h2>The Bridge in-curve</h2>
-      <h3>Grace Cossington Smith</h3>
-      <p>1930, National gallery of Victoria</p>
-      <a href="https://en.wikipedia.org/wiki/The_Bridge_in_Curve">read more</a>
-    </div>
-  </div>
-  <div class="painting">
-    <img src="7.jpg" alt="">
-    <div class="info">
-      <h2>Fieka</h2>
-      <h3>Victor Vasarely</h3>
-      <p>Inter-American Development Bank</p>
-      <a href="https://artsandculture.google.com/asset/fieka-victor-vasarely/-AFQ-pcWcYmZwQ?hl=en">read more</a>
-    </div>
-  </div>
-  <div class="painting">
-    <img src="supper.jpg" alt="">
+    <img src="3.jpg" alt="" onclick="openImage('supper')">
     <div class="info">
       <h2>supper in dresden</h2>
       <h3>Georg Baselitz</h3>
       <p>1983, Kunsthaus Zürich, Switzerland</p>
       <a href="https://artsandculture.google.com/asset/supper-in-dresden-georg-baselitz/mwEiozAZ8GqcAg?hl=en">read
         more</a>
+        <p>i like how its the opposite side</p>
     </div>
   </div>
   <div class="painting">
-    <img src="josette.jpg" alt="">
+    <img src="4.jpg" alt="" onclick="openImage(4)">
+    <div class="info">
+      <h2>The procuress</h2>
+      <h3>Gerard van Honthorst</h3>
+      <p>1625, Centraal Museum, Netherlands</p>
+      <a href="https://www.centraalmuseum.nl/nl">read more</a>
+      <p>i like that it looks realistic</p>
+    </div>
+  </div>
+  <div class="painting">
+    <img src="5.jpg" alt="" onclick="openImage(5)">
+    <div class="info">
+      <h2>Portrait of Madame Matisse. The Green Line</h2>
+      <h3>Henri Matisse</h3>
+      <p>1905, Statens Museum for Kunst</p>
+      <a href="https://www.smk.dk/en/highlight/portrait-of-madame-matisse-the-green-line-1905/">read more</a>
+      <p>i like that the texture looks rough</p>
+    </div>
+  </div>
+  <div class="painting">
+    <img src="6.jpg" alt="" onclick="openImage(6)">
+    <div class="info">
+      <h2>The Bridge in-curve</h2>
+      <h3>Grace Cossington Smith</h3>
+      <p>1930, National gallery of Victoria</p>
+      <a href="https://en.wikipedia.org/wiki/The_Bridge_in_Curve">read more</a>
+      <p>i like the landscape of the image</p>
+    </div>
+  </div>
+  <div class="painting">
+    <img src="7.jpg" alt="" onclick="openImage(7)">
+    <div class="info">  
+      <h2>Fieka</h2>
+      <h3>Victor Vasarely</h3>
+      <p>Inter-American Development Bank</p>
+      <a href="https://artsandculture.google.com/asset/fieka-victor-vasarely/-AFQ-pcWcYmZwQ?hl=en">read more</a>
+      <p>i like how the circles are perfectly round</p>
+    </div>
+  </div>
+  
+  <div class="painting">
+    <img src="8.jpg" alt="" onclick="openImage('josette')">
     <div class="info">
       <h2>Portrait of Josette Gris</h2>
       <h3>Juan Gris</h3>
       <p>1916,Museo Reina Sofia Madrid, Spain </p>
       <a href="https://artsandculture.google.com/asset/portrait-of-josette-gris-juan-gris/HgEtxayTVN4LTg?hl=en">read
         more</a>
+        <p>i like that it looks like a collage</p>
     </div>
   </div>
+  <script src="script.js"></script>
 
 
 </body>
